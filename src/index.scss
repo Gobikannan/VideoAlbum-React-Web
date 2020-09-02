@@ -1,0 +1,43 @@
+@import "~office-ui-fabric-react/dist/css/fabric.min.css";
+
+html {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.spinner-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
+
+.ms-Dialog-main {
+  max-width: 650px !important;
+}
+
+.page-header {
+  font-size: 16px;
+  font-weight: 800;
+}

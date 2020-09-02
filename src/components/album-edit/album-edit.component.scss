@@ -1,0 +1,21 @@
+.album-header-container {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5em;
+  justify-content: space-between;
+}
+
+.cancel-button-container {
+  margin-left: 10px;
+}
+
+.action-container {
+  margin: 10px;
+}
+
+.form-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 300px;
+}
