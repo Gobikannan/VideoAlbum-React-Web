@@ -8,7 +8,6 @@ import {
   submitAlbum,
 } from "./album-edit.service";
 import { TextField } from "office-ui-fabric-react/lib/TextField";
-import { AlbumType } from "../../models/album-type";
 import {
   Dropdown,
   IDropdown,
@@ -17,6 +16,7 @@ import {
 import PrimaryRoutingButton from "../primary-routing-button/primary-routing-button.component";
 import DefaultRoutingButton from "../default-routing-button/default-routing-button.component";
 import { Spinner, SpinnerSize } from "office-ui-fabric-react/lib/Spinner";
+import { AlbumType } from "../../containers/albums/albums-model";
 
 const dropdownStyles = { dropdown: { width: 300 } };
 

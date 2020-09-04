@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { PrimaryButton, DefaultButton } from "office-ui-fabric-react";
-import { AlbumResponse } from "./../album-list/album.service";
 import {
   Dialog,
   DialogType,
   DialogFooter,
 } from "office-ui-fabric-react/lib/Dialog";
 import { deleteAlbum } from "./album-delete.service";
+import { AlbumResponse } from "../../containers/albums/albums-model";
 
 const dialogContent = (albumName: string) => {
   return {
@@ -24,7 +24,11 @@ type albumProps = {
 const DeleteAlbumDialog = (props: albumProps) => {
   const [hideDialog, setHideDialog] = useState(true);
   const dialogContentProps = dialogContent(props.album.name);
-  const handleDeleteAlbum = (albumId: number) => {
+  const handleDeleteAlbum = (albumId: number | undefined) => {
+    if (!albumId) {
+      alert("Invalid album to delete");
+      return;
+    }
     deleteAlbum(albumId)
       .then((x) => {
         console.log(x);

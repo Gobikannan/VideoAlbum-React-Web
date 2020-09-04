@@ -1,8 +1,11 @@
 import React from "react";
-import HomePageComponent from "./app-layout/app.component";
+import { connect } from "react-redux";
+import HomePageApp from "./containers/home/home.container";
 
-function App() {
-  return <HomePageComponent />;
+function MainAppComponent() {
+  return <HomePageApp />;
 }
+
+const App = connect(null, null)(MainAppComponent);
 
 export default App;
